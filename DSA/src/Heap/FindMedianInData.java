@@ -26,6 +26,6 @@ class MedianFinder {
         else return (maxHeap.peek() + minHeap.peek())/2.0;
     }
 }
-public class FindMedianInData
+public class FindMedianInData{
 
 }
