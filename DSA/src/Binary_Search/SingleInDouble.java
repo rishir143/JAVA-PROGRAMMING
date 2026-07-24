@@ -12,7 +12,7 @@ public class SingleInDouble {
         while(lo <= hi){
             int mid = lo + (hi - lo)/2;
 
-            if(arr[mid] != arr[mid - 1] && arr[mid] != arr[mid + 1]) return mid;
+            if(arr[mid] != arr[mid - 1] && arr[mid] != arr[mid + 1]) return arr[mid];
             int f = mid;
             int s = mid;
             if(arr[mid] == arr[mid - 1]) f = mid - 1;
