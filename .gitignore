@@ -1,0 +1,12 @@
+# IntelliJ IDEA internal project files
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Compiled Java class outputs
+out/
+*.class
+
+# Mac OS specific system files
+.DS_Store
