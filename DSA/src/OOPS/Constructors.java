@@ -1,8 +1,8 @@
 package OOPS;
 class Car{
-private String name;
-private int price;
-Car(){
+ String name; // null
+private int price; // 0
+Car(){ // default constructor
 
 }
     Car(String name, int x){
@@ -23,6 +23,11 @@ Car(){
                 """.formatted(name, price));
     }
 
+    void printf(){
+        int price = 12;
+        System.out.println(this.price+" "+name);
+    }
+
 }
 public class Constructors {
     public static void main(String[] args) {
@@ -30,6 +35,10 @@ public class Constructors {
         c1.print();
 
         Car c2 = new Car(150000, "Alto");
-        c2.print();
+        c2.printf();
+
+        Car c3 = new Car();
+        c3.name = "Honda Amaze";
+        c3.print();
     }
 }
