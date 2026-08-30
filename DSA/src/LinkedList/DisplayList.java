@@ -33,11 +33,35 @@ public class DisplayList {
         b.next = c;
         c.next = d;
         d.next = e;
-        displayRec(a);
+//        displayRec(a);
 
+        System.out.println(get(a, 2));
 //        Node n = null;
 //        n.val = 10;
 //        System.out.println(n.val);
 //        System.out.println(n.next);
     }
+
+    public static int get(Node head, int idx){
+        Node temp = head;
+        int count = 0;
+        while(temp != null){
+
+            if(idx == count){
+                return temp.val;
+            }
+            count++;
+            temp = temp.next;
+        }
+        return -1;
+    }
+
+//    public static int get(Node head, int indx){
+//        Node temp = head;
+//        for (int i = 1; i <=indx ; i++) {
+//            temp = temp.next;
+//        }
+//        return temp.val;
+//    }
+
 }
