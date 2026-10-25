@@ -18,7 +18,7 @@ public class RecursivePush {
 
         int element = 9;
 
-        BottomAtPush(st1 , element);
+        PushAtBottom(st1 , element);
 
         while(st1.size() > 0) {
 
@@ -33,13 +33,13 @@ public class RecursivePush {
         }
 
     }
-    public static void BottomAtPush(Stack<Integer> st, int ele){
+    public static void PushAtBottom(Stack<Integer> st, int ele){
         if(st.isEmpty()){
             st.push(ele);
             return;
         }
         int item = st.pop();
-        BottomAtPush(st, ele);
+        PushAtBottom(st, ele);
         st.push(item);
     }
 }
